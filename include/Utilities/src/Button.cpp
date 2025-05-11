@@ -30,6 +30,12 @@ void Button::setSize(sf::Vector2f size)
     m_sprite.setScale(scale_x, scale_y);
 }
 
+void Button::action() const
+{
+    logger::log("A button was pressed");
+}
+
+
 void Button::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
     target.draw(m_sprite, states);

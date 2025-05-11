@@ -9,11 +9,11 @@
 
 namespace logger
 {
-    void log(std::string message)
+    inline void log(std::string message)
     {
         std::ofstream logs;
-        logs.open("../../../logs.txt\n", std::ios::app);
-        logs << message << std::endl;
+        logs.open("logs.txt", std::ios::app);
+        logs << message << "\n" << std::endl;
         logs.close();
     }
 }
