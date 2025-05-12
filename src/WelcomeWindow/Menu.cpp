@@ -1,7 +1,7 @@
 //
 // Created by graduate on 12/05/25.
 //
-#include "Menu.h"
+#include "WelcomeWindow/Menu.h"
 #include "Logger.h"
 
 Menu::Menu(const std::string& textureSource, sf::IntRect rect)

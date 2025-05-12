@@ -7,7 +7,6 @@
 
 #include <string>
 #include <SFML/Graphics.hpp>
-#include <memory>
 
 class Button : public sf::Drawable
 {

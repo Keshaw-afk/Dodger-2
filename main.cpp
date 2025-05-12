@@ -1,7 +1,7 @@
 #include <iostream>
-#include "ExitButtonTest.h"
+#include "WelcomeWindowTest.h"
 
 int main()
 {
-    testExitButton();
+    testWelcomeWindow();
 }

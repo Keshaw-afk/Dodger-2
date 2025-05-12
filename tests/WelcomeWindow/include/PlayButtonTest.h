@@ -5,7 +5,7 @@
 #ifndef PLAYBUTTONTEST_H
 #define PLAYBUTTONTEST_H
 
-#include "PlayButton.h"
+#include "WelcomeWindow/PlayButton.h"
 
 void testPlayButton();
 

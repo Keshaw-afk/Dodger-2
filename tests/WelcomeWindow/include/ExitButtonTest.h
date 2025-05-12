@@ -5,7 +5,7 @@
 #ifndef EXITBUTTONTEST_H
 #define EXITBUTTONTEST_H
 
-#include "ExitButton.h"
+#include "WelcomeWindow/ExitButton.h"
 
 void testExitButton();
 

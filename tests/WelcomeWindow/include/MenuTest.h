@@ -5,7 +5,7 @@
 #ifndef MENUTEST_H
 #define MENUTEST_H
 
-#include "Menu.h"
+#include "WelcomeWindow/Menu.h"
 
 void testMenu();
 

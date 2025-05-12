@@ -9,7 +9,15 @@
 //                  Window dimension Constants               //
 /*************************************************************/
 
+//Common to all windows
+
 #define window_size {800, 600}
+
+/*************************************************************/
+//                  Welcome window title                      //
+/*************************************************************/
+
+#define WelcomeWindowTitle "Welcome to Dodger"
 
 /*************************************************************/
 //                  Play Button Constants                    //
