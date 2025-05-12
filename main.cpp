@@ -1,7 +1,7 @@
 #include <iostream>
-#include "tests/PlayButtonTest.h"
+#include "ExitButtonTest.h"
 
 int main()
 {
-    testPlayButton();
+    testExitButton();
 }

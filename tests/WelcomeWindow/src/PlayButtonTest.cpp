@@ -8,7 +8,7 @@
 void testPlayButton()
 {
     sf::RenderWindow window(sf::VideoMode(1000, 1000), "PlayButton test");
-    PlayButton playButton("asset/MenuForeground.png", sf::IntRect{100, 50, 155, 70});
+    PlayButton playButton("assets/MenuForeground.png", sf::IntRect{100, 50, 155, 70});
     playButton.setPosition({400, 200});
     playButton.setSize({200, 200});
     while (window.isOpen())
