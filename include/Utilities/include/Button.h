@@ -19,8 +19,12 @@ public:
     void setPosition(sf::Vector2f pos);
     void setSize(sf::Vector2f size);
 
+    //Get position, size, length, width information
+    sf::FloatRect getGlobalBounds();
+
     //Each button will have different actions, play button will continue into the game, exit button will close the game
     virtual void action() const = 0;
+
 
 private:
     //Each individual button will have its own individual texture

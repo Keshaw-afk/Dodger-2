@@ -2,15 +2,15 @@
 // Created by graduate on 11/05/25.
 //
 #include "PlayButtonTest.h"
-
 #include "Logger.h"
+#include "constants.h"
 
 void testPlayButton()
 {
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), "PlayButton test");
-    PlayButton playButton("assets/MenuForeground.png", sf::IntRect{100, 50, 155, 70});
-    playButton.setPosition({400, 200});
-    playButton.setSize({200, 200});
+    sf::RenderWindow window(sf::VideoMode(window_size), "PlayButton test");
+    PlayButton playButton(PlayButtonTextureSource, sf::IntRect(IntRectPlayButton));
+    playButton.setPosition(PlayButtonPosition);
+    playButton.setSize(PlayButtonSize);
     while (window.isOpen())
     {
         sf::Event event;

@@ -12,6 +12,10 @@ add_executable(dodger
         src/WelcomeWindow/ExitButton.cpp
         tests/WelcomeWindow/src/PlayButtonTest.cpp
         tests/WelcomeWindow/src/ExitButtonTest.cpp
+        include/WelcomeWindow/Menu.h
+        src/WelcomeWindow/Menu.cpp
+        tests/WelcomeWindow/include/MenuTest.h
+        tests/WelcomeWindow/src/MenuTest.cpp
 )
 
 

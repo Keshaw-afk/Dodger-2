@@ -30,6 +30,12 @@ void Button::setSize(sf::Vector2f size)
     m_sprite.setScale(scale_x, scale_y);
 }
 
+sf::FloatRect Button::getGlobalBounds()
+{
+    return m_sprite.getGlobalBounds();
+}
+
+
 void Button::action() const
 {
     logger::log("A button was pressed");

@@ -2,14 +2,16 @@
 // Created by graduate on 11/05/25.
 //
 #include "ExitButtonTest.h"
+
+#include "constants.h"
 #include "Logger.h"
 
 void testExitButton()
 {
-    sf::RenderWindow window(sf::VideoMode(1000, 1000), "PlayButton test");
-    ExitButton exitButton("assets/MenuForeground.png", sf::IntRect{100, 240, 155, 70});
-    exitButton.setPosition({400, 600});
-    exitButton.setSize({200, 200});
+    sf::RenderWindow window(sf::VideoMode(window_size), "ExitButton test");
+    ExitButton exitButton(ExitButtonTextureSource, sf::IntRect(IntRectExitButton));
+    exitButton.setPosition(ExitButtonPosition);
+    exitButton.setSize(ExitButtonSize);
     while (window.isOpen())
     {
         sf::Event event;
