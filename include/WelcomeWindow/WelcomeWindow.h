@@ -15,14 +15,20 @@ private:
     Menu m_menu;
     PlayButton m_playButton;
     ExitButton m_exitButton;
-
     sf::RenderWindow m_window;
 
 public:
     WelcomeWindow();
+    void close();
+    void clear();
     void render();
-    sf::RenderWindow* get_render_window();
+    void display();
 
+    bool isOpen() const;
+    void getRelevantEvents();
+
+private:
+    void processMousepressEvents() const;
 
 };
 

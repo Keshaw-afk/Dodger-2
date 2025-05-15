@@ -5,6 +5,10 @@
 #include <fstream>
 #include "Logger.h"
 
+/************************************* Button constructor ******************************************/
+
+// Loads from textureSource and creates the sprite, ready to be deployed
+
 Button::Button(const std::string& textureSource, const sf::IntRect rect)
 {
 
@@ -17,10 +21,14 @@ Button::Button(const std::string& textureSource, const sf::IntRect rect)
     m_sprite.setTextureRect(rect);
 }
 
+/********************************* Sets position of sprite  *******************************************/
+
 void Button::setPosition(sf::Vector2f pos)
 {
     m_sprite.setPosition(pos);
 }
+
+/********************************* Sets size of sprite *************************************************/
 
 void Button::setSize(sf::Vector2f size)
 {
@@ -30,9 +38,13 @@ void Button::setSize(sf::Vector2f size)
     m_sprite.setScale(scale_x, scale_y);
 }
 
-sf::FloatRect Button::getGlobalBounds()
+/********************************* I plan on removing this function it seems bad practice, purpose of adding it in the first place was to check if button was being clicked or hovered ******************/
+/********************************* But I will add the logic in the class itself, something called isClicked() ***********************************************************/
+
+
+bool Button::isClicked(sf::Vector2f mousePos) const
 {
-    return m_sprite.getGlobalBounds();
+    return m_sprite.getGlobalBounds().contains(mousePos);
 }
 
 
@@ -41,6 +53,7 @@ void Button::action() const
     logger::log("A button was pressed");
 }
 
+/*************************** Overloaded draw method of sf::Drawable class *******************************/
 
 void Button::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {

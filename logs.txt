@@ -13,3 +13,15 @@ Texture couldn't be loaded
 Sun May 11 23:43:59 2025
 Texture couldn't be loaded
 
+Thu May 15 14:59:40 2025
+Playbutton was pressed
+
+Thu May 15 14:59:49 2025
+Playbutton was pressed
+
+Thu May 15 14:59:58 2025
+Exit button was pressed
+
+Thu May 15 15:00:23 2025
+Exit button was pressed
+
