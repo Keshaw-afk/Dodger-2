@@ -4,6 +4,7 @@
 
 #include "WelcomeWindow/PlayButton.h"
 
+#include "constants.h"
 #include "Logger.h"
 
 PlayButton::PlayButton(const std::string& textureSource, sf::IntRect rect) : Button(textureSource, rect)
@@ -11,7 +12,7 @@ PlayButton::PlayButton(const std::string& textureSource, sf::IntRect rect) : But
 
 }
 
-void PlayButton::action() const
+void PlayButton::action()
 {
     logger::log("Playbutton was pressed");
 }

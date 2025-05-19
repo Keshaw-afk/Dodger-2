@@ -74,7 +74,7 @@ void WelcomeWindow::getRelevantEvents()
 
 }
 
-void WelcomeWindow::processMousepressEvents() const
+void WelcomeWindow::processMousepressEvents()
 {
     const sf::Vector2i pixelPos = sf::Mouse::getPosition(m_window);
     const sf::Vector2f worldPos = m_window.mapPixelToCoords(pixelPos);

@@ -11,7 +11,7 @@ ExitButton::ExitButton(const std::string& textureSource, sf::IntRect rect) : But
 
 }
 
-void ExitButton::action() const
+void ExitButton::action()
 {
     logger::log("Exit button was pressed");
 }

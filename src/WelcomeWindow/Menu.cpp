@@ -27,11 +27,6 @@ void Menu::setSize(sf::Vector2f size)
     m_sprite.setScale({scale_x, scale_y});
 }
 
-sf::FloatRect Menu::getGlobalBounds()
-{
-    return m_sprite.getGlobalBounds();
-}
-
 void Menu::draw(sf::RenderTarget& target, sf::RenderStates states) const
 {
     target.draw(m_sprite, states);

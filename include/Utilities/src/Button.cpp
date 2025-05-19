@@ -48,7 +48,7 @@ bool Button::isClicked(sf::Vector2f mousePos) const
 }
 
 
-void Button::action() const
+void Button::action()
 {
     logger::log("A button was pressed");
 }

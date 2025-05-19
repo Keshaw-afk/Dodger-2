@@ -38,6 +38,7 @@
 
 #define PlayButtonPosition {300, 100}
 #define PlayButtonSize {200, 100}
+#define PlayButtonTransformationSize {300, 150}
 
 /*************************************************************/
 //                  Exit Button Constants                    //

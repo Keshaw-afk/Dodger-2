@@ -9,10 +9,11 @@
 
 class PlayButton : public Button
 {
+
 public:
     PlayButton(const std::string& textureSource, sf::IntRect rect);
 
-    void action() const override;
+    void action() override;
 };
 
 #endif //PLAYBUTTON_H

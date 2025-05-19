@@ -53,7 +53,7 @@ public:
     bool isClicked(sf::Vector2f mousePos) const;
 
     //Each button will have different actions, play button will continue into the game, exit button will close the game
-    virtual void action() const = 0;
+    virtual void action() = 0;
 
 
 private:

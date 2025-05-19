@@ -28,7 +28,7 @@ public:
     void getRelevantEvents();
 
 private:
-    void processMousepressEvents() const;
+    void processMousepressEvents();
 
 };
 

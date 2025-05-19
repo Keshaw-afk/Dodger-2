@@ -12,7 +12,7 @@ class ExitButton : public Button
 public:
     ExitButton(const std::string& textureSource, sf::IntRect rect);
 
-    void action() const override;
+    void action() override;
 };
 
 #endif //EXITBUTTON_H
