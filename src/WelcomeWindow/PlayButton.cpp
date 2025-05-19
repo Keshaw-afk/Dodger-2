@@ -13,6 +13,6 @@ PlayButton::PlayButton(const std::string& textureSource, sf::IntRect rect) : But
 }
 
 void PlayButton::action()
-{
+{ //Made it non-const
     logger::log("Playbutton was pressed");
 }
